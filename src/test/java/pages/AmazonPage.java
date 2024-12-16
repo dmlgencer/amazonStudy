@@ -10,7 +10,7 @@ public class AmazonPage {
     public AmazonPage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
-//fe
+//fe 12
 
     @FindBy(xpath = "//input[@id='twotabsearchtextbox']")
     public WebElement searchArea;
