@@ -21,7 +21,7 @@ public class TC_001_LoginPageStepDefinitions {
         Driver.getDriver().get(ConfigReader.getProperty("amazon_base_url"));
         ReusableMethods.waitFor(4);
     }
-
+//damladamla
     @When("user hovers over the accounts and lists section")
     public void user_hovers_over_the_accounts_and_lists_section() {
         actions.moveToElement(loginPage.accountAndLists).perform();
