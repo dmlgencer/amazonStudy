@@ -16,6 +16,7 @@ public class TC_001_LoginPageStepDefinitions {
 
 
     @Given("user goes to amazon home page")
+
     public void user_goes_to_amazon_home_page() {
         Driver.getDriver().get(ConfigReader.getProperty("amazon_base_url"));
         ReusableMethods.waitFor(4);
