@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = {"stepDefinitions","hooks"},
         dryRun = false,
-        tags = "@amazon_search"
+        tags = "@amazon_login"
 
 )
 
