@@ -32,7 +32,19 @@ public class TC_001_LoginPageStepDefinitions {
         String expectedTitle = "Amazon Sign-In";
         Assert.assertEquals(Driver.getDriver().getTitle(), expectedTitle, "NOT EQUAL!");
         ReusableMethods.waitFor(1);
-        Driver.getDriver().quit();
-//.
+
+
+    }
+
+    @When("user clicks the sign in field and enter a valid email")
+    public void user_clicks_the_sign_in_field_and_enter_a_valid_email() {
+        loginPage.signInField.click();
+        loginPage.signInField.sendKeys("damla.45gencer@gmail.com");
+        ReusableMethods.waitFor(2);
+    }
+
+    @When("user clicks the continue button")
+    public void user_clicks_the_continue_button() {
+        loginPage.continueButton.click();
     }
 }

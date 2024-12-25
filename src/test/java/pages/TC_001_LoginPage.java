@@ -16,4 +16,10 @@ public class TC_001_LoginPage {
 
     @FindBy(xpath = "(//span[@class='nav-action-inner'])[1]")
     public WebElement signInButton;
+
+    @FindBy(id = "ap_email")
+    public WebElement signInField;
+
+    @FindBy(id = "continue")
+    public WebElement continueButton;
 }
