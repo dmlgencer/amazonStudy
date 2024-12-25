@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -16,6 +17,20 @@ public class TC_001_LoginPage {
     @FindBy(xpath = "(//span[@class='nav-action-inner'])[1]")
     public WebElement signInButton;
 
+    @FindBy(id = "ap_email")
+    public WebElement signInField;
+
+    @FindBy(id = "continue")
+    public WebElement continueButton;
+
+    @FindBy(id = "ap_password")
+    public WebElement passwordField;
+
+    @FindBy(id = "signInSubmit")
+    public WebElement sigInSubmitButton;
+
+    @FindBy(xpath = "//span[text()='Hello, Damla']")
+    public WebElement helloDamlaText;
 
 
 }
