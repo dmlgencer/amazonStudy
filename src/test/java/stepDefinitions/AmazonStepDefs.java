@@ -28,6 +28,7 @@ public class AmazonStepDefs {
         ReusableMethods.waitFor(2);
         amazonPage.searchButton.click();
         ReusableMethods.waitFor(2);
+        //deneme
 
     }
 

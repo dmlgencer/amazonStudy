@@ -12,6 +12,10 @@ public class TC_001_LoginPage {
     }
 
     @FindBy(xpath = "//a[@aria-labelledby='Account & Lists']")
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
+    @FindBy(xpath = "//a[@aria-labelledby ='Account & Lists']")
     public WebElement accountAndLists;
 
     @FindBy(xpath = "(//span[@class='nav-action-inner'])[1]")
@@ -22,4 +26,13 @@ public class TC_001_LoginPage {
 
     @FindBy(id = "continue")
     public WebElement continueButton;
+
+    @FindBy(id = "ap_password")
+    public WebElement passwordField;
+
+    @FindBy(id = "signInSubmit")
+    public WebElement sigInSubmitButton;
+
+    @FindBy(xpath = "//span[text()='Hello, Damla']")
+    public WebElement helloDamlaText;
 }
